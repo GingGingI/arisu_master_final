@@ -74,7 +74,9 @@ public class SettingFragment extends Fragment {
         gpsInfo.stopUsingGPS();
         textSize = v.findViewById(R.id.textSizeSeekBar);
         textSize.setMax(10);
-        textSize.setProgress(all_cursor.getInt(all_cursor.getColumnIndex("TEXTSIZE")));
+        if (data.ChkDB()) {
+            textSize.setProgress(all_cursor.getInt(all_cursor.getColumnIndex("TEXTSIZE")));
+        }
         API.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

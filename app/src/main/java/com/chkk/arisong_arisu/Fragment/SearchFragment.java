@@ -112,6 +112,7 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback {
             smallName.setTextSize(textSize + 10);
         }else{
             sf.dbset();
+            Log.d("SearchFragment", "Chk");
         }
         regular = Typeface.createFromAsset(getActivity().getAssets(), "NanumBarunGothicBold.ttf");
         try{
@@ -223,7 +224,7 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
         hf = new HomeFragment();
-
+//        mia.showProgressDialog("아리수를 찾는 중입니다.");
         databaseReference.child("LocationDB").addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
 
@@ -262,8 +263,10 @@ public class SearchFragment extends Fragment implements OnMapReadyCallback {
             public void onCancelled(DatabaseError databaseError) {
                 Log.i("SDSDSDSSDSDSDSDS", "SDSDSDSDSDSDSDSDSDS");
             }}
-
         );
+//        데이터다 불러왔을 때 다이얼로그내림
+//        mia.hideProgressDialog();
+//        Log.i("Dialog", "hide");
     }
 
     //정보창 클릭 리스너

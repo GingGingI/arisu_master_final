@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
@@ -48,10 +49,7 @@ public class MainActivity extends AppCompatActivity  {
 
                     fragment3 = new SearchFragment();
                     FragmentTransaction fragmentTransactions3 = getSupportFragmentManager().beginTransaction();
-
-
 //                    Toast.makeText(MainActivity.this, "", Toast.LENGTH_SHORT).show();
-                    showProgressDialog("아리수를 찾는 중입니다.");
                     fragmentTransactions3.replace(R.id.frame_layout, fragment3);
 
                     fragmentTransactions3.commit();
@@ -97,11 +95,12 @@ public class MainActivity extends AppCompatActivity  {
     public void hideProgressDialog(){
         if (progressDialog != null && progressDialog.isShowing()) {
             //Progress다이얼로그가 켜져있거나 (Not Null) 다이얼로그가 보여지고있는경우
+            Log.i("Dialog", "dismissed");
             progressDialog.dismiss();
         }
     }
     public void ProgaressDialogoff(){
-       // progressDialog.dismiss();
+        // progressDialog.dismiss();
     }
 
     public void setLatLon(double lat, double lon) {
