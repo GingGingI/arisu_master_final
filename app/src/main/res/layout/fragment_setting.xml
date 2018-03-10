@@ -1,0 +1,421 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chkk.arisong_arisu.Fragment.SettingFragment"
+              android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="푸시 알람 동의[미구현]"
+                    android:textSize="24sp"
+                    android:fontFamily="monospace"
+                    android:lineSpacingMultiplier="-0.1"
+                    android:textStyle="bold"
+                    android:id="@+id/pushText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:hint="아리송아리수의 알람을 받습니다. "
+                    android:fontFamily="monospace"
+                    android:textSize="14sp"
+                    android:letterSpacing="-0.1"
+                    android:id="@+id/under_pushText"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:track="@drawable/switch_track_selector"
+                    android:thumb="@drawable/switch_thumb_selector"
+                    android:id="@+id/pushSwitch"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="API사용 여부[미구현]"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="-0.1"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:id="@+id/APIText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:hint="API를 사용합니다."
+                    android:fontFamily="monospace"
+                    android:textSize="14sp"
+                    android:letterSpacing="-0.1"
+                    android:id="@+id/under_APIText"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:track="@drawable/switch_track_selector"
+                    android:thumb="@drawable/switch_thumb_selector"
+                    android:id="@+id/APISwitch"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="글자 크기변경"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="-0.1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:id="@+id/textSize"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:hint="글자 크기를 변경합니다"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="-0.1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:id="@+id/under_textSize"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5">
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textSizeSeekBar"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="음수대 표시 반경[미구현]"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="-0.1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:id="@+id/aroundSize"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:hint="음수대의 표시 반경을 변경합니다."
+                    android:fontFamily="monospace"
+                    android:letterSpacing="-0.1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:id="@+id/under_aroundSize"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/around"
+                    android:entries="@array/around"
+                    android:fontFamily="monospace"
+                    android:layout_gravity="left"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#fff"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text="버전 정보"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="-0.1"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:id="@+id/version"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:hint="0.3.1"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="-0.1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:id="@+id/under_version"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3.5">
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c2c2c2"/>
+</LinearLayout>

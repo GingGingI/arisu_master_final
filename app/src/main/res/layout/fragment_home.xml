@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.chkk.arisong_arisu.Fragment.HomeFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ededed"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#fff"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/Spinner_gu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"/>
+
+            <Spinner
+                android:id="@+id/Spinner_dong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"/>
+
+            <TextView
+                android:id="@+id/itemcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=":개"
+                android:textSize="22sp"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+
+
+</FrameLayout>

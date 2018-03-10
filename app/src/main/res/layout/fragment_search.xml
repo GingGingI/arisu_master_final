@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chkk.arisong_arisu.Fragment.SearchFragment">
+
+<RelativeLayout
+    android:id="@+id/ShearchmainID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/googlemap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.chkk.arisong_arisu.Fragment.SearchFragment" />
+
+
+
+        <LinearLayout
+            android:id="@+id/getmore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"></LinearLayout>
+
+            <LinearLayout
+                android:background="#fff"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3">
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_no_pic"
+                    android:id="@+id/picture"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                         <TextView
+                            android:gravity="left|bottom"
+                            android:text="광암아리수정수센터"
+                            android:id="@+id/gu"
+                            android:textSize="24sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:fontFamily="monospace"
+                            />
+                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2">
+                        <ImageView
+                            android:scaleType="fitXY"
+                            android:src="@drawable/pinkarrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5"/>
+                        <TextView
+                            android:text="test"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:id="@+id/distance"
+                            android:fontFamily="monospace"
+                            android:gravity="center|top"/>
+                            </LinearLayout>
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/smallname"
+                            android:text="강남구 개포동"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="monospace"
+                            android:gravity="bottom"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="around">
+        <item>100m 이내</item>
+        <item>250m 이내</item>
+        <item>500m 이내</item>
+        <item>1km 이내</item>
+        <item>1.5km 이내</item>
+        <item>2km 이내</item>
+        <item>모두표시</item>
+    </string-array>
+</resources>
